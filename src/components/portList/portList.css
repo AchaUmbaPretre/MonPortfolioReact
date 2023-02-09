@@ -1,0 +1,41 @@
+.portList{
+    width: 30%;
+    height: 40vh;
+    margin: 20px 10px;
+    border: 1px solid rgb( 243, 242, 242);
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+.portRow{
+    height: 20px;
+    background: rgb( 243, 242, 242);
+    display: flex;
+    align-items: center;
+}
+.portCircle{
+    height: 5px;
+    width: 5px;
+    background: white;
+    border-radius: 50%;
+    margin: 3px;
+}
+.portImg{ 
+    width: 100%;
+    height: auto;
+    transition: all 15s ease;
+    cursor: pointer;
+}
+.portList:hover .portImg{
+    transform: translateY(-100%);
+}
+
+@media screen and (max-width: 768px){
+    .portList{
+        width: 90%;
+        height: 40vh;
+        margin: 20px 10px;
+        border: 1px solid rgb( 243, 242, 242);
+        border-radius: 10px 10px 0 0;
+        overflow: hidden;
+    }
+}
